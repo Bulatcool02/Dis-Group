@@ -25,6 +25,6 @@ public class Product {
     private String price;
     @JsonIgnoreProperties("product")
     @OneToMany
-    @JoinColumn(name = "product_id") // we need to duplicate the physical information
+    @JoinColumn(name = "product_id")
     private List<Article> articles;
 }
